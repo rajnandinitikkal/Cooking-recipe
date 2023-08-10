@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* Reset default browser styles */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: #fff;
+    height: 80px;
+}
+
+.logo img {
+    height: 80px;
+    padding-left: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 25px;
+    padding: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2c3e50;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logo-name {
+    font-family: 'Satisfy', cursive;
+    margin-right: 600px;
+    font-size: 50px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #2c3e50;
+        top: 75px;
+        left: 0;
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .burger {
+        display: flex;
+    }
+}
+
+
+/* Your existing CSS styles */
+
+
+/* Landing page styles */
+
+.landing {
+    /* Your landing page styles */
+}
+
+.cta-button {
+    /* Your button styles */
+}
+
+
+/* Food cards styles */
+
+.food-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.food-card {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.food-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.food-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.food-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.recipe-button {
+    background-color: #FF4500;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.recipe-button:hover {
+    background-color: #FF6347;
+}
+
+
+/* Recipe section styles */
+
+.recipe-section {
+    /* Your recipe section styles */
+}
+
+.welcome-name {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-top: 10px;
+}
